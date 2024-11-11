@@ -1,9 +1,9 @@
 export default function getListStudentds() {
-    const obj = [
-        {id: 1, firstName: 'Guillame', location: 'San Francisco'},
-        {id: 2, firstName: 'James', location: 'Columbia'},
-        {id: 5, firstName: 'Serena', location: 'San Francisc'},
-    ];
+  const obj = [
+    { id: 1, firstName: 'Guillame', location: 'San Francisco' },
+    { id: 2, firstName: 'James', location: 'Columbia' },
+    { id: 5, firstName: 'Serena', location: 'San Francisc' },
+  ];
 
-    return obj;
+  return obj;
 }
