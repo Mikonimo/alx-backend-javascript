@@ -1,17 +1,18 @@
 const request = require('request');
 const { expect } = require('chai');
+const app = require('./api');
+
 let server;
 
 const BASE_URL = 'http://localhost:7865';
 
 describe('Index page', () => {
     before((done) => {
-        server = require('./api'); // Import the server
-        done();
+        server = app.listen(7865, () => done()); // Start the server for testing
     });
 
     after(() => {
-        server.close(); // Close the server to free up the port
+        server.close(); // Close the server after all tests
     });
 
     it('should return status code 200', (done) => {
